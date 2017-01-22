@@ -3,7 +3,7 @@ import ProductsContainer from './ProductsContainer'
 import ShoppingBagContainer from './ShoppingBagContainer'
 
 const App = () => (
-  <div>
+  <div className="">
     <ShoppingBagContainer />
     <ProductsContainer />
   </div>

@@ -17,8 +17,15 @@ const addToBagUnsafe = productId => ({
   productId
 })
 
+const removeFromBagUnsafe = productId => ({
+  type: types.REMOVE_FROM_BAG,
+  productId
+})
+
 export const addToBag = productId => (dispatch, getState) => {
-  if (getState().products.byId[productId].inventory > 0) {
-    dispatch(addToBagUnsafe(productId))
-  }
+  dispatch(addToBagUnsafe(productId))
+}
+
+export const removeFromBag = productId => (dispatch) => {
+  dispatch(removeFromBagUnsafe(productId))
 }

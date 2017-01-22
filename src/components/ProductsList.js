@@ -1,9 +1,11 @@
 import React, { PropTypes } from 'react'
 
 const ProductsList = ({ title, children }) => (
-  <div>
-    <div className="header col-md-10">{title}</div>
-    <div className="prodList col-md-10">{children}</div>
+  <div className="col-md-12">
+	<div className="col-md-10">
+		<div className="header col-md-12">{title}</div>
+		<div className="prodList col-md-12">{children}</div>
+	</div>
   </div>
 )
 

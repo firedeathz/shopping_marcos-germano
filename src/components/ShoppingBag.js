@@ -1,33 +1,40 @@
 import React, { PropTypes } from 'react'
-import Product from './Product'
+import { connect } from 'react-redux'
+import ShoppingItem from '../components/ShoppingItem'
+import { removeFromBag } from '../actions'
 
-const ShoppingBag  = ({ products, total }) => {
+const ShoppingBag = ({ products, total }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
-    products.map(product =>
-      <Product
-        name={product.name}
-		description={product.description}
-        price={product.price}
-        discount={product.discount}
-        key={product.id}
-      />
+  products.map(product =>
+	<ShoppingItem
+		key={product.id}
+		product={product}
+		onRemoveFromBagClicked={() => removeFromBag(product.id)}
+	/>
     )
   ) : (
-    <em>Your bag is empty.</em>
+    <em className="emptyBag col-md-12">Your bag is empty.</em>
   )
 
   return (
-    <div>
-		<div className="bag">
-		  <div className="header col-md-10">Your Bag</div>
-		  <div className="col-md-10">{nodes}</div>
+    <div className="col-md-12">
+		<div className="bag col-md-10">
+		  <div className="header col-md-12">Your Bag</div>
+		  <div className="prodList col-md-12">{nodes}</div>
 		</div>
 		<div className="summary col-md-2">
-		  <p>
-			<span>Total</span>
-			<span>&#163;{total}</span>
-		  </p>
+			<div className="col-md-6 align-left">
+				<p className="summTitle">SUMMARY</p>
+				<p className="totalTitle">Total</p>
+			</div>
+			<div className="col-md-6 align-right">
+				<p className="quantity">Quantity {products.length}</p>
+				<p className="totalPrice"><span className="nobold">GBP</span> &#163;{total}</p>
+			</div>
+			<div className="col-md-12 align-right">
+				<p className="note">Duties &amp; Taxes included</p>
+			</div>
 		</div>
 	</div>
   )
@@ -38,4 +45,7 @@ ShoppingBag.propTypes = {
   total: PropTypes.string,
 }
 
-export default ShoppingBag
+export default connect(
+  ShoppingBag,
+  { removeFromBag }
+)(ShoppingBag)

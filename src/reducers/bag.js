@@ -1,5 +1,6 @@
 import {
-  ADD_TO_BAG
+  ADD_TO_BAG,
+  REMOVE_FROM_BAG
 } from '../constants/ActionTypes'
 
 const initialState = {
@@ -13,6 +14,8 @@ const addedIds = (state = initialState.addedIds, action) => {
         return state
       }
       return [ ...state, action.productId ]
+	case REMOVE_FROM_BAG:
+	  return [ ...state.splice(state.indexOf(action.productId)), action.productId ]
     default:
       return state
   }

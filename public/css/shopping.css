@@ -38,7 +38,7 @@
   font-size: 12.5px;
   font-family: "Polaris-Bold";
   letter-spacing: 0px;
-  line-height: 1.5;
+  line-height: 19px;
   background-color: #fff;
   padding-left: 10px;
   padding-top: 15px;
@@ -46,15 +46,76 @@
 }
 
 .bag {
-	
+
 }
 
 .summary {
-	
+	padding: 5px !important;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.align-left {
+	text-align:left;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.summTitle {
+	color: #222;
+	opacity: 1;
+	font-size: 24px;
+	font-family: "Polaris-Bold-Condensed";
+	letter-spacing: 2.1px;
+	line-height: 36px;
+}
+
+.nobold {
+	font-family: "Polaris-Book";
+}
+
+.totalTitle {
+	font-family: "Polaris-Bold";
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	line-height: 19px;
+}
+
+.quantity {
+	color: #aaa;
+	opacity: 1;
+	font-size: 13px;
+	font-family: "Polaris-Book";
+	letter-spacing: 0.8px;
+	line-height: 36px;
+}
+
+.note {
+	color: #aaa;
+	opacity: 1;
+	font-size: 13px;
+	font-family: "Polaris-Book";
+	letter-spacing: 0;
+	line-height: 19px;
+}
+
+.totalPrice {
+	font-family: "Polaris-Bold";
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.emptyBag {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background: #fff;
 }
 
 body {
 	background-color: #eee !important;
+	overflow: scroll;
 } 
 
 #root {
@@ -64,6 +125,7 @@ body {
 .thumb {
 	display: block;
 	margin: auto;
+	height: 326px;
 }
 
 .name {
@@ -72,7 +134,8 @@ body {
 	opacity: 1;
 	font-size: 13px;
 	letter-spacing: 2.2px;
-	line-height: 1.5;
+	line-height: 19px;
+	margin-top: 20px;
 }
 
 .desc, .price {
@@ -80,7 +143,7 @@ body {
 	letter-spacing: 0px;
 	opacity: 1;
 	font-size: 13px;
-	line-height: 1.5;
+	line-height: 19px;
 	color: #222;
 }
 
@@ -95,7 +158,7 @@ body {
 	font-size: 13px;
 	font-family: "Polaris-Bold";
 	letter-spacing: 0.1px;
-	line-height: 1.5 !important;
+	line-height: 19px !important;
 }
 
 .prodList {
@@ -106,7 +169,7 @@ body {
 	text-align: center;
 	background-color: #fff;
 	padding: 20px 20px 0px 20px !important;
-	margin: 6px 6px 0 0 !important;
+	margin: 6px 6px 6px 0 !important;
 	width: auto !important;
 }
 
