@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "BRAND ONE", "description": "black pants", "price": 480.90, "discount": 0.5, "image" : "images/black_jeans.jpg" },
+  {"id": 2, "name": "BRAND TWO", "description": "black heels", "price": 350.00, "discount": 0, "image" : "images/black_heels.jpg" },  
+  {"id": 3, "name": "BRAND THREE", "description": "lightblue pattern blouse", "price": 110.0, "discount": 0.30, "image" : "images/lightblue_pattern_blouse.jpg" },  
+  {"id": 4, "name": "BRAND FOUR", "description": "blue jeans", "price": 60, "discount": 0.7, "image" : "images/blue_jeans.jpg" },  
+  {"id": 5, "name": "BRAND FIVE", "description": "deep blue dress", "price": 1050.00, "discount": 0, "image" : "images/deep_blue_dress.jpg" }  
+]
