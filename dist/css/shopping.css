@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Polaris-Bold";
+  src: url("/fonts/polaris-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Polaris-Bold-Condensed";
+  src: url("/fonts/polariscondensed-bold-webfont.ttf");
+}
+
+@font-face {
+  font-family: "Polaris-Book";
+  src: url("/fonts/polaris-book-webfont.ttf");
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.discPrice {
+  color: #f00;
+  padding-left: 7.5px;  
+  padding-right: 7.5px;
+}
+
+.hidden {
+  display:none;
+}
+
+.discAmt {
+  padding-left: 7.5px;
+}
+
+.header {
+  color: #222222;
+  opacity: 1;
+  font-size: 12.5px;
+  font-family: "Polaris-Bold";
+  letter-spacing: 0px;
+  line-height: 19px;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bag {
+
+}
+
+.summary {
+	padding: 5px !important;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.align-left {
+	text-align:left;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.summTitle {
+	color: #222;
+	opacity: 1;
+	font-size: 24px;
+	font-family: "Polaris-Bold-Condensed";
+	letter-spacing: 2.1px;
+	line-height: 36px;
+}
+
+.nobold {
+	font-family: "Polaris-Book";
+}
+
+.totalTitle {
+	font-family: "Polaris-Bold";
+	font-size: 16px;
+	letter-spacing: 0.8px;
+	line-height: 19px;
+}
+
+.quantity {
+	color: #aaa;
+	opacity: 1;
+	font-size: 13px;
+	font-family: "Polaris-Book";
+	letter-spacing: 0.8px;
+	line-height: 36px;
+}
+
+.note {
+	color: #aaa;
+	opacity: 1;
+	font-size: 13px;
+	font-family: "Polaris-Book";
+	letter-spacing: 0;
+	line-height: 19px;
+}
+
+.totalPrice {
+	font-family: "Polaris-Bold";
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.emptyBag {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background: #fff;
+}
+
+body {
+	background-color: #eee !important;
+	overflow: scroll;
+} 
+
+#root {
+	margin: 50px;
+}
+
+.thumb {
+	display: block;
+	margin: auto;
+	height: 326px;
+}
+
+.name {
+	font-family: "Polaris-Bold-Condensed";
+	color: #222;
+	opacity: 1;
+	font-size: 13px;
+	letter-spacing: 2.2px;
+	line-height: 19px;
+	margin-top: 20px;
+}
+
+.desc, .price {
+	font-family: "Polaris-Book";
+	letter-spacing: 0px;
+	opacity: 1;
+	font-size: 13px;
+	line-height: 19px;
+	color: #222;
+}
+
+.my-btn {
+	margin: 30px 30px !important;
+	border-radius: 40px !important;
+	width: 180px;
+	background: #fff !important; 
+	border: 1px inside #ddd !important;
+	color: #222;
+	opacity: 1;
+	font-size: 13px;
+	font-family: "Polaris-Bold";
+	letter-spacing: 0.1px;
+	line-height: 19px !important;
+}
+
+.prodList {
+	padding: 0px !important;
+}
+
+.productItem {
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 20px 0px 20px !important;
+	margin: 6px 6px 6px 0 !important;
+	width: auto !important;
+}
+
+.productItem:last-child {
+	margin-right: 0 !important;
+}

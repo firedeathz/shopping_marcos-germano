@@ -15,7 +15,10 @@ const addedIds = (state = initialState.addedIds, action) => {
       }
       return [ ...state, action.productId ]
 	case REMOVE_FROM_BAG:
-	  return [ ...state.splice(state.indexOf(action.productId)), action.productId ]
+	  if (state.indexOf(action.productId) !== -1) {
+	    state.splice(state.indexOf(action.productId), 1);
+	  }
+	  return state
     default:
       return state
   }
